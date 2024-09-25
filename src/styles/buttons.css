@@ -1,0 +1,38 @@
+/*All buttons */
+
+.btn {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* form Buttons*/
+.form-btn {
+  width: 70px;
+  padding: 5px;
+  color: white;
+  font-weight: bolder;
+}
+
+/* Add todo Folder Button */
+.add-btn {
+  background-color: rgb(20, 196, 20);
+  margin-right: 5px;
+}
+
+/* Cancel todo Folder Button */
+.cancel-btn {
+  background-color: red;
+}
+
+/* Add Todo Folder Project Button */
+
+#add-project {
+  color: whitesmoke;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  background: #5cbebe;
+}
