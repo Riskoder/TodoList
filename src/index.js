@@ -1,4 +1,4 @@
 import './styles/index.css';
-import { createFolderForm } from './components/todoFolderTemplate';
+import { initApp } from './init';
 
-createFolderForm();
+initApp();
