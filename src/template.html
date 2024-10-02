@@ -3,18 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <title>Minimalist ToDo App</title>
+    <title>Minimalist Todo List</title>
   </head>
   <body>
-    <aside id="aside-todo-list" class="flex-column">
-      <h2 class="title">List of Projects</h2>
-      <section id="todo-projects-list" class="flex-column"></section>
-      <button id="add-project" class="btn flex-center">
-        <span class="material-symbols-outlined"> add </span> Add Project
+    <aside class="aside flex">
+      <h2 class="aside-title">Projects</h2>
+      <section id="folder-section" class="flex">
+        <ul id="folder-list" class="todo-folder flex"></ul>
+      </section>
+      <button id="create-folder" class="btn add-folder hover">
+        Add a Project
       </button>
     </aside>
+    <main id="main-content" class="flex main"></main>
   </body>
 </html>
