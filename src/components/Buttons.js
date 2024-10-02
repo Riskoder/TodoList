@@ -1,24 +1,40 @@
 import deleteIcon from '../assets/icons/delete.svg';
-import editIcon from '../assets/icons/edit.svg';
+import addIcon from '../assets/icons/add.svg';
 
-export function createTypeButton(type) {
-  const img = document.createElement('img');
-  switch (type) {
-    case 'delete':
-      img.classList.add('todo-folder-icon', 'scale');
-      img.src = deleteIcon;
-      img.alt = 'Delete Icon';
-      break;
-    case 'edit':
-      img.classList.add('todo-folder-icon', 'scale');
-      img.src = editIcon;
-      img.alt = 'Edit Icon';
-      break;
-    default:
-      img.src = '';
-      img.alt = '';
-      break;
-  }
+export function createFormButtons() {
+  const buttonContainer = document.createElement('div');
 
-  return img;
+  buttonContainer.innerHTML = `
+    <button type="submit" class="add-btn btn">Add</button>
+    <button type="button" class="cancel-btn btn">Cancel</button>
+  `;
+
+  return buttonContainer;
+}
+
+export function createDeleteButton() {
+  const deleteButton = document.createElement('button');
+  deleteButton.classList.add('delete-btn', 'right');
+
+  deleteButton.innerHTML = deleteIcon;
+
+  return deleteButton;
+}
+
+export function createAddButton() {
+  const button = document.createElement('button');
+  button.classList.add('btn');
+
+  button.innerHTML = addIcon;
+
+  return button;
+}
+
+export function createAddTodoBtn() {
+  const button = document.createElement('button');
+  button.classList.add('add-todo', 'btn', 'hover', 'add-folder');
+
+  button.innerHTML = addIcon;
+
+  return button;
 }
