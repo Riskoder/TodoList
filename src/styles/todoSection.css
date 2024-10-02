@@ -1,0 +1,49 @@
+.todo-notes {
+  padding: 20px;
+}
+
+.todo {
+  display: flex;
+  align-items: center;
+  background-color: #01121f;
+  padding: 16px;
+}
+
+.low {
+  border: 1px solid blue;
+}
+
+.medium {
+  border: 1px solid orange;
+}
+
+.high {
+  border: 1px solid red;
+}
+
+.completed {
+  border: 1px solid rgb(20, 196, 20);
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  margin-right: auto;
+}
+
+.todo-title {
+  width: 170px;
+}
+
+.todo-desc {
+  max-width: 800px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.right {
+  display: flex;
+  margin-left: auto;
+  gap: 40px;
+}

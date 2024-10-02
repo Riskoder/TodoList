@@ -1,0 +1,20 @@
+.todo-form {
+  width: 800px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  place-content: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.todo-form div:first-child,
+.todo-form div:last-child {
+  grid-column: 2 span;
+  text-align: center;
+}
+
+.todo-form div:last-child input {
+  height: 50px;
+}

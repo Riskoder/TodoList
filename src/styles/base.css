@@ -11,6 +11,7 @@ html,
 body {
   height: 100vh;
   font-family: 'Poppins', sans-serif;
+  color: whitesmoke;
 }
 
 body {
@@ -18,27 +19,23 @@ body {
   background-color: #01121f;
 }
 
-.flex-column {
+.flex {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
-.flex {
-  display: flex;
-  align-items: center;
-}
-
 .flex-center {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
-.scale {
-  transition: all 0.3s ease;
+.hover:hover {
+  background-color: #f5f5f534;
 }
 
-.scale:hover {
-  transform: scale(1.5);
+.main {
+  width: 100%;
+  background-color: #0b2942;
 }

@@ -1,38 +1,66 @@
-/*All buttons */
-
 .btn {
+  width: 70px;
   padding: 10px;
+  font-weight: bolder;
   border: none;
+  color: inherit;
   border-radius: 8px;
-  font-size: 14px;
   font-family: inherit;
   cursor: pointer;
 }
 
-/* form Buttons*/
-.form-btn {
-  width: 70px;
-  padding: 5px;
-  color: white;
-  font-weight: bolder;
-}
-
-/* Add todo Folder Button */
 .add-btn {
   background-color: rgb(20, 196, 20);
   margin-right: 5px;
 }
 
-/* Cancel todo Folder Button */
 .cancel-btn {
   background-color: red;
 }
 
-/* Add Todo Folder Project Button */
+.delete-btn {
+  background-color: transparent;
+  border: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
 
-#add-project {
-  color: whitesmoke;
-  font-size: 1.2rem;
-  font-weight: bolder;
-  background: #5cbebe;
+.delete-btn svg {
+  height: 24px;
+}
+
+.delete-btn:hover {
+  transform: scale(1.2);
+}
+
+.delete-btn:hover svg {
+  fill: red;
+}
+
+/* Folder Add Button*/
+
+.add-folder {
+  margin: 0 auto;
+  width: 50%;
+  background-color: transparent;
+  border: 2px solid aqua;
+  transition: all 0.3s ease;
+}
+
+.add-folder:hover {
+  transform: scale(1.1);
+}
+
+/*Add todo Note Btn*/
+
+.add-todo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 10;
+  top: 40px;
+  right: 40px;
+  background-color: transparent;
+  border: 2px solid aqua;
 }

@@ -1,0 +1,21 @@
+.form-folder {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  gap: 6px;
+  transition: all 0.2s ease;
+}
+
+
+
+.folder-input {
+  font-size: 1rem;
+  width: 100%;
+  padding: 3px;
+  transition: all 0.2s ease;
+}
+
+.folder-input:hover,
+.folder-input:focus {
+  outline: 3px solid aqua;
+}
